@@ -1,0 +1,14 @@
+﻿{
+  "Id": "5TnCaywN-0id-8x57luW7w",
+  "Reference": "__xOUgJhWUOJBVamu1itzA/5TnCaywN-0id-8x57luW7w",
+  "ParentRef": "__xOUgJhWUOJBVamu1itzA/43HsaYfSsEWirAj4kpDPnw",
+  "Name": "Edge botsDNA-Industrial Plants",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2022-06-01T15:19:56.3197671Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.4.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-01T15:19:56.3197671Z"
+}

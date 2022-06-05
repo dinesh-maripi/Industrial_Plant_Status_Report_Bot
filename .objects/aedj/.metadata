@@ -1,0 +1,11 @@
+﻿{
+  "Id": "aedj-mw_X0e6ValyH7cEfQ",
+  "Reference": "__xOUgJhWUOJBVamu1itzA/aedj-mw_X0e6ValyH7cEfQ",
+  "Name": "Industrial_Plant_Status_Report",
+  "Type": "App",
+  "Created": "2022-06-01T15:19:37.5590615Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-06-01T15:19:37.5590615Z"
+}
