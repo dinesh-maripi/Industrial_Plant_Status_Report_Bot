@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="788,1900" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="788,1901" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
       <x:String>System.Activities</x:String>
@@ -89,19 +89,19 @@
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="630,1835" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="630,1836" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Edge botsDNA-Industrial Plants" sap:VirtualizedContainerService.HintSize="588,1743" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cf665f00-639b-4c11-a5d6-1bfba28682f7" Version="V1" WindowResize="Maximize">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Edge botsDNA-Industrial Plants" sap:VirtualizedContainerService.HintSize="588,1744" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cf665f00-639b-4c11-a5d6-1bfba28682f7" Version="V1" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,1527" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,1528" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="scg:List(x:String)" Name="Plants" />
             </Sequence.Variables>
@@ -164,7 +164,7 @@
                       <uix:NGetAttribute.Target>
                         <uix:TargetAnchorable BrowserURL="https://botsdna.com/IndustrialPlants/" DesignTimeRectangle="848, 328, 63, 19" ElementType="DropDown" FriendlyName="'Ovens'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl id='ddlEquipment' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ddlEquipment' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="3687d342-e351-49f5-82cd-6becb6c81065" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAXCAYAAABQ1fKSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVFhH7ZjBjcIwEEVTAke6gFoi7YUWKAKE0kooZTlSBAcuSJQw6297nG8nTjDSSks2T7IUe5zAvMxYgkoWAosMIpJxvV5lt9vJer2W1Wo124H8kCfyZYIMBOYuIR3Il4UEGTCFDfv9Xh6Ph1+dJ8gPeSJf5K0EGVoVcxehIE+tDiXIQABjmG9pqkqqMBqz8vmkOU/LuLVSGwHNxc/BpbFSorUPpFDGXdqvSurz3c877udaqq/W7Pg7HA4HeT6fftaBtePx6GcdZTJsVdTS3vyc4ZitFG6dRKKvLtdi/Dy/79RQvP+c0J6nfHNCBPZst9tICK6xhhj2MGUyekky7hxxrcLXhkhiEoueqckmc5+0rb4gwMVyrYmkN5tNJIRFIMaSwC/JMLMTvTncx9dRO3FS7prbkJ9jZeQqc4BUyJgIUCbj1TYJcycOCakklxDefjycgHEZIL5/WgwLwciJAGUyBr6s0j9A9Y2jYqiaepXBTMtgbOyFQ1uFjIkAhTIM/vCLetW2T7Jm0LcYyxs6T3Q+LmOwSjKiUiBhTAQol2FxCWnpZc+RXFt5AXp/l/xUZbj45Oe+yZsy5klWxvLbhGQsv1pJxvJ/BskACMDU3KUgP+TJIkAk47+zyAiI/ACxj1RDXOrz6QAAAABJRU5ErkJggg==" InformativeScreenshot="ccdb8424b9da9c2e972707dc5405bceb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='botsDNA-Industrial Plants' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="705, 319, 132, 37" ElementType="Text" FriendlyName="'Equipment Type'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableCol='3' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' aaname='Equipment Type : ' check:innerText='Equipment Type :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIgAAAApCAYAAADu+mEZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL0SURBVHhe7ZhRkqsgEEWzRqtmQym3oksxq8jXfGQZPIRuaBpsM+rkJeM9VXwooLe7r0BycQAYwCDAJBnkfr+joaXGFAYBYAYGASYwCDCBQYAJDAJMYBBgAoMAExgEmMAgwAQGASYwCDCBQYDJRoNMrr9c3MVo/Y2GHsB09c+8TnT1WTzGrpmf3Do3fNPgN2TXChKC/xrcg64Tt951Y3X3lMzmzh9L/LDy9cMNX2c0yMl4jP1ikadR5kcbxHMbTmaQNw/4cL4H1z29TTQM8uYcbpDm1xSSSHuuHz/5eSFJfisq9+F8timX4UuxZfGZRO7venw4s6TnU7/QobdA+awipvCMWR89V/QXc/S8JrVBQiw8n89ZSSflJWjo3STzqM5ki/orKMdPnun2G4RFpaa+ppRgeS2SpPuLJOaixIKKIqV7nGRVxLlRElIROHGc8NAb42gZkLXGRhqpSMv6LRZWEKVnZrrG62bhSRdrXtR/AIevINNVJisWTIqvklQlWCdRP4NMUCQgzolj6v5KZ/HOODcbgRsVbE1f1W+hY2N0jH6c1l8ZyGsMMa3o38nhBinPIFH87xtEjtliEKPALzEIaaSi6m26ZZAc04r+nRxvECIGqYs7s5ZgncRnDCLnbDFIu2iBFxmE+7pxcsO1zGnLIHkbWdG/k98xyJw0uh+DMxKs9vQ43gef7umC07VIWKnjpwahflXk9PN0zSBBf+wvf9K2YBO0R3HsutjVffHOGVP/TjYaJAbKhWw1mYR0SBRNJkH2dz6wXAA2A7VQdDZALzSwWerxnNw0LhScr3NStcbw/mpsGXeMMd/ThZWUOnxrfVjhWeVKMRPn+niFRv2upv4mpFd8QBa7VpBtRIFWMm3qFeLv4HPTiIsN8j8ifr1B9M/EH/N3DbL0j+x5DELmWF8Gl2htOR+O2MZaZ5Nqi6T7r+L1Kwj4KGAQYAKDABMYBJjAIMAEBgEmMAgwgUGACQwCTBYNgobGjUkGAaAFDAIMnPsHSqSqasOL5y0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -197,7 +197,7 @@
                               <uix:NSelectItem.Target>
                                 <uix:TargetAnchorable BrowserURL="https://botsdna.com/IndustrialPlants/" DesignTimeRectangle="848, 328, 63, 19" ElementType="DropDown" FriendlyName="'Ovens'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl id='ddlEquipment' tableRow='1' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ddlEquipment' type='' tag='SELECT' class='' aaname='' /&gt;" Guid="3d5fe242-996e-4520-bae1-cf4ec42b63c1" InformativeScreenshot="ccdb8424b9da9c2e972707dc5405bceb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='botsDNA-Industrial Plants' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="705, 319, 132, 37" ElementType="Text" FriendlyName="'Equipment Type'" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableCol='3' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' aaname='Equipment Type : ' check:innerText='Equipment Type :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIgAAAApCAYAAADu+mEZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL0SURBVHhe7ZhRkqsgEEWzRqtmQym3oksxq8jXfGQZPIRuaBpsM+rkJeM9VXwooLe7r0BycQAYwCDAJBnkfr+joaXGFAYBYAYGASYwCDCBQYAJDAJMYBBgAoMAExgEmMAgwAQGASYwCDCBQYDJRoNMrr9c3MVo/Y2GHsB09c+8TnT1WTzGrpmf3Do3fNPgN2TXChKC/xrcg64Tt951Y3X3lMzmzh9L/LDy9cMNX2c0yMl4jP1ikadR5kcbxHMbTmaQNw/4cL4H1z29TTQM8uYcbpDm1xSSSHuuHz/5eSFJfisq9+F8timX4UuxZfGZRO7venw4s6TnU7/QobdA+awipvCMWR89V/QXc/S8JrVBQiw8n89ZSSflJWjo3STzqM5ki/orKMdPnun2G4RFpaa+ppRgeS2SpPuLJOaixIKKIqV7nGRVxLlRElIROHGc8NAb42gZkLXGRhqpSMv6LRZWEKVnZrrG62bhSRdrXtR/AIevINNVJisWTIqvklQlWCdRP4NMUCQgzolj6v5KZ/HOODcbgRsVbE1f1W+hY2N0jH6c1l8ZyGsMMa3o38nhBinPIFH87xtEjtliEKPALzEIaaSi6m26ZZAc04r+nRxvECIGqYs7s5ZgncRnDCLnbDFIu2iBFxmE+7pxcsO1zGnLIHkbWdG/k98xyJw0uh+DMxKs9vQ43gef7umC07VIWKnjpwahflXk9PN0zSBBf+wvf9K2YBO0R3HsutjVffHOGVP/TjYaJAbKhWw1mYR0SBRNJkH2dz6wXAA2A7VQdDZALzSwWerxnNw0LhScr3NStcbw/mpsGXeMMd/ThZWUOnxrfVjhWeVKMRPn+niFRv2upv4mpFd8QBa7VpBtRIFWMm3qFeLv4HPTiIsN8j8ifr1B9M/EH/N3DbL0j+x5DELmWF8Gl2htOR+O2MZaZ5Nqi6T7r+L1Kwj4KGAQYAKDABMYBJjAIMAEBgEmMAgwgUGACQwCTBYNgobGjUkGAaAFDAIMnPsHSqSqasOL5y0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -208,6 +208,9 @@
                               <ui:InvokeWorkflowFile.Arguments>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_EquipmentType">
                                   <VisualBasicValue x:TypeArguments="x:String" ExpressionText="EquipmentType" />
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_PlantType">
+                                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Plant" />
                                 </InArgument>
                               </ui:InvokeWorkflowFile.Arguments>
                             </ui:InvokeWorkflowFile>

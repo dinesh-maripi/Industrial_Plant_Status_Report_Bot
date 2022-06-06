@@ -3,8 +3,9 @@
     <x:Property Name="in_ExtractDataTable" Type="InArgument(sd:DataTable)" />
     <x:Property Name="in_out_BeltsTanksOvensDT" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_EquipmentType" Type="InArgument(x:String)" />
+    <x:Property Name="in_PlantType" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>788,701</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>669,701</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -93,6 +94,7 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap:VirtualizedContainerService.HintSize="615,636" sap2010:WorkflowViewState.IdRef="Sequence_11">
@@ -116,7 +118,7 @@
             <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[in_EquipmentType]" sap:VirtualizedContainerService.HintSize="497,182" sap2010:WorkflowViewState.IdRef="Switch`1_2">
               <ui:AddDataRow DataRow="{x:Null}" x:Key="Belts" ArrayRow="[{CurrentRow(0), CurrentRow(1), CurrentRow(2), &quot;&quot;, &quot;&quot;, &quot;&quot;}]" DataTable="[in_out_BeltsTanksOvensDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
               <ui:AddDataRow DataRow="{x:Null}" x:Key="Tanks" ArrayRow="[{CurrentRow(0), &quot;&quot;, &quot;&quot;,CurrentRow(1), CurrentRow(2), &quot;&quot;}]" DataTable="[in_out_BeltsTanksOvensDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
-              <ui:AddDataRow DataRow="{x:Null}" x:Key="Ovens" ArrayRow="[{CurrentRow(0), &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, CurrentRow(1)}]" DataTable="[in_out_BeltsTanksOvensDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="284,22" sap2010:WorkflowViewState.IdRef="AddDataRow_6">
+              <ui:AddDataRow DataRow="{x:Null}" x:Key="Ovens" ArrayRow="[{CurrentRow(0), &quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, CurrentRow(1)}]" DataTable="[in_out_BeltsTanksOvensDT]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="284,185" sap2010:WorkflowViewState.IdRef="AddDataRow_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -134,6 +136,12 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:AppendRange DataTable="[in_out_BeltsTanksOvensDT]" DisplayName="Append Range" sap:VirtualizedContainerService.HintSize="573,115" sap2010:WorkflowViewState.IdRef="AppendRange_2" SheetName="Sheet1" WorkbookPath="output.xlsx" />
+    <ui:WriteRange AddHeaders="True" DataTable="[in_out_BeltsTanksOvensDT]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="573,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="[String.Format(&quot;Data/Output/{0}-{1}_{2}.xlsx&quot;, in_PlantType, in_EquipmentType, Now.ToString(&quot;dd-MMMM-yyyy&quot;))]">
+      <ui:WriteRange.StartingCell>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:WriteRange.StartingCell>
+    </ui:WriteRange>
   </Sequence>
 </Activity>
